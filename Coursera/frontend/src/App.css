@@ -1,0 +1,733 @@
+nav{
+    height: 18vh;
+    padding: 15px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+nav .topContainer{
+    align-self: flex-end;
+    display: flex;
+    gap: 15px;
+    color: #b6babb;
+    font-size: .8rem;
+}
+
+nav .topContainer hr{
+    border-color: #b6babb;
+}
+
+nav .topContainer .socials{
+    display: flex;
+    gap: 8px;
+}
+
+nav .bottomContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+nav .bottomContainer .logo{
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+nav .bottomContainer .logo span{
+    color: #efa110;
+}
+
+nav .bottomContainer .linksContainer{
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+nav .bottomContainer .linksContainer .link a{
+    color: #b6babb;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+nav .bottomContainer .linksContainer .link a.active{
+    color: #888888;
+}
+
+nav .bottomContainer .linksContainer .link:last-child a{
+    background-color: #aaa;
+    padding: 8px 10px;
+    border-radius: 15px;
+    transition: box-shadow .3s linear;
+    color: #FFF;
+}
+
+nav .bottomContainer .linksContainer .link:last-child a.active{
+    color: #888888;
+}
+
+nav .bottomContainer .linksContainer .link:last-child:hover a{
+    box-shadow: rgba(0, 0, 0, 0.568) 0px 6px 5px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.heroContainer{
+    min-height: 100vh;
+    background: radial-gradient(#677070, #4a4f55);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heroContainer .hero{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.heroContainer .hero .mainTextContainer{
+    font-size: 3.5rem;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.1;
+    text-align: center;
+    width: 50%;
+}
+
+.heroContainer .hero .buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.heroContainer .hero .buttonContainer button{
+    /* background: #fff; */
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: box-shadow .2s linear;
+}
+
+.heroContainer .hero .buttonContainer button:hover{
+    box-shadow: rgba(0, 0, 0, 0.568) 0px 8px 9px ;
+}
+
+.heroContainer .hero .buttonContainer button:active{
+    box-shadow: rgba(0, 0, 0, 0.568) 0px 4px 6px ;
+}
+
+.heroContainer .hero .buttonContainer a:nth-child(1) button{
+    background: #efa110;
+}
+
+.heroContainer .hero .buttonContainer a:nth-child(2) button{
+    background: #c78eff;
+}
+
+.heroContainer .signInForm{
+    background: #cecbcb72;
+    border-radius: 15px;
+    align-self: center;
+    margin: 100px 0;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heroContainer .signInForm .formTitle{
+    align-self: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+
+.heroContainer .signInForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #4a4f55;
+}
+
+.heroContainer .signInForm form .inputContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
+}
+
+.heroContainer .signInForm form .inputContainer input,
+.heroContainer .signInForm form .inputContainer select{
+    
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.heroContainer .signInForm form .inputContainer select option{
+    width: 100%;
+}
+
+.heroContainer .signInForm form .inputContainer label{
+    justify-self: self-start;
+}
+
+.heroContainer .signInForm form .inputContainer label span{
+    color: #d85f47;
+}
+
+.heroContainer .signInForm form .inputContainer label:has(+ input:focus){
+    color: rgb(0, 0, 0);
+}
+
+.heroContainer .signInForm form .buttonContainer{
+    margin-top: 15px;
+}
+
+.heroContainer .signInForm form .buttonContainer button{
+    padding: 10px 35px;
+    background-color: #efa110;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+.heroContainer .signInForm form .buttonContainer button:hover{
+    box-shadow: rgba(0, 0, 0, 0.568) 0px 8px 9px ;
+}
+
+.heroContainer .signInForm form .noAccount span a{
+    color: #FFF;
+}
+
+
+
+
+.coursesContainer{
+    padding: 150px;
+    background: #f2f2f2;
+}
+
+.coursesContainer .headerText{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.coursesContainer .headerText .main{
+    font-size: 2rem;
+}
+
+.coursesContainer .headerText .sub{
+    width: 60%;
+    font-size: 1.2rem;
+    color: #b6babb;
+}
+
+.coursesContainer .courseCardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px 30px;
+}
+
+.coursesContainer .courseCardContainer .courseCard{
+    /* width: 25%; */
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: transform .4s ease;
+}
+
+.coursesContainer .courseCardContainer .courseCard:hover{
+    transform: scale(1.05);
+}
+
+.coursesContainer .courseCardContainer .courseCard .courseImage{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.coursesContainer .courseCardContainer .courseCard .courseImage img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.coursesContainer .courseCardContainer .courseCard .topContainer{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.coursesContainer .courseCardContainer .courseCard .topContainer .heading{
+    font-weight: 600;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.coursesContainer .courseCardContainer .courseCard .topContainer .subHeading{
+    color: #b6babb;
+    font-size: .9rem;
+    width: 90%;
+}
+
+.coursesContainer .courseCardContainer .courseCard .bottomContainer{
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coursesContainer .courseCardContainer .courseCard .bottomContainer .price{
+    color: #00b716;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.coursesContainer .courseCardContainer .courseCard .bottomContainer .startCourseButton button{
+    padding: 7px 10px;
+    background: #00b716;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    transition: box-shadow .2s linear;
+    box-shadow: #4a4f55b5 3px 2px 5px;
+}
+
+.coursesContainer .courseCardContainer .courseCard:hover .bottomContainer .startCourseButton button{
+    box-shadow: #4a4f55b5 3px 4px 8px;
+}
+
+.coursesContainer .courseCardContainer .courseCard:hover .bottomContainer .startCourseButton button:hover{
+    box-shadow: #4a4f55b5 4px 6px 8px;
+}
+
+.coursesContainer .courseCardContainer .courseCard:hover .bottomContainer .startCourseButton button:active{
+    box-shadow: #4a4f55b5 2px 3px 8px;
+}
+
+
+
+.pageContent{
+    min-height: 100vh;
+    padding: 150px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageContent:has(.lesson){
+    padding: 100px 0;
+}
+
+.pageContent .quizQuestion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 600px; 
+    margin: 0 auto;
+    padding: 50px 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+.pageContent .quizQuestion .title{
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.pageContent .quizQuestion .question{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.pageContent .quizQuestion ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pageContent .quizQuestion ul li{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pageContent .quizQuestion button{
+    align-self: flex-end;
+    padding: 10px 20px ;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow .2s linear;
+    cursor: pointer;
+}
+
+.pageContent .quizQuestion button{
+    box-shadow: #4a4f55b5 3px 4px 8px;
+}
+
+.pageContent .quizQuestion button:hover{
+    box-shadow: #4a4f55b5 4px 6px 8px;
+}
+
+.pageContent .quizQuestion button:active{
+    box-shadow: #4a4f55b5 2px 3px 8px;
+}
+
+
+.pageContent .lesson{
+    width: 80%;
+    background: #cccccc70;
+    padding: 50px 100px;
+}
+
+.pageContent .lesson .lessonHeading{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4a4f55;
+}
+
+.pageContent .lesson .lessonContainer{
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.pageContent .lesson .lessonContainer .lessonDuration{
+    align-self: flex-end;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageContent .lesson .lessonContainer .lessonDuration span{
+    font-size: .9rem;
+    font-weight: 600;
+    color: #969696;
+}
+
+.pageContent .lesson .lessonContainer .lessonDesc{
+    align-self: center;
+    width: 50%;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.pageContent .lesson .lessonContainer .lessonSubHeading{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #7c7c7c;
+}
+
+.pageContent .lesson .lessonContainer .lessonContent{
+    width: 50%;
+    margin-left: 25px;
+}
+
+.pageContent .lesson .lessonContainer .lessonContent ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pageContent .lesson .lessonContainer button{
+    align-self: flex-end;
+    margin-top: 50px;
+    padding: 10px 50px ;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow .2s linear;
+    cursor: pointer;
+}
+
+.pageContent .lesson .lessonContainer button{
+    box-shadow: #4a4f55b5 3px 4px 8px;
+}
+
+.pageContent .lesson .lessonContainer button:hover{
+    box-shadow: #4a4f55b5 4px 6px 8px;
+}
+
+.pageContent .lesson .lessonContainer button:active{
+    box-shadow: #4a4f55b5 2px 3px 8px;
+}
+
+
+
+
+
+
+
+
+.profilePage{
+    min-height: 100vh;
+}
+
+.profilePage .topContainer{
+    background-color: #e4e4e48a;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profilePage .topContainer .profilePhoto{
+    justify-self: self-end;
+    width: 60%;
+}
+
+.profilePage .topContainer .profilePhoto img{
+    width: inherit;
+    border-radius: 100%;
+}
+
+.profilePage .topContainer .profileMainDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 5px;
+}
+
+.profilePage .topContainer .profileMainDetails .name{
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+}
+
+.profilePage .topContainer .profileMainDetails .company{
+    font-size: .9rem;
+}
+
+.profilePage .topContainer .profileMainDetails .email{
+    font-size: .7rem;
+}
+
+.profilePage .topContainer .profileMainDetails .courseDetailsContainer{
+    margin-top: 20px;
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 15px;
+}
+
+.profilePage .topContainer .profileMainDetails .courseDetailsContainer .enrolledCourses{
+    padding: 5px 20px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.profilePage .topContainer .profileMainDetails .courseDetailsContainer hr{
+    align-self: normal;
+    border: 3px solid;
+    border-color: #e4e4e48a;
+}
+
+.profilePage .topContainer .profileMainDetails .courseDetailsContainer .enrolledCourses .count{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #888888;
+}
+
+.profilePage .topContainer .profileMainDetails .courseDetailsContainer .enrolledCourses .title{
+    font-size: .8rem;
+    color: #aaa;
+}
+
+
+.profilePage .bottomContainer{
+    width: 75%;
+    margin: 75px auto;
+}
+
+.profilePage .bottomContainer .containerTitle{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.profilePage .bottomContainer .courseCardContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 35px;
+}
+    
+.profilePage .bottomContainer .courseCardContainer .courseCard {
+    width: 90%;
+    margin: 15px auto;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);  
+    padding: 20px 15px;
+    background-color: #eee;
+}
+.profilePage .bottomContainer .courseCardContainer .courseCard input {
+    display: none;
+}
+.profilePage .bottomContainer .courseCardContainer .courseCard label{
+    text-decoration: none;
+    color: #efa110;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.profilePage .bottomContainer .courseCardContainer .courseCard label::before{
+    content: "+";
+    font-weight: 800;
+    color: black;
+}
+
+.profilePage .bottomContainer .courseCardContainer .courseCard p{
+    width: 85%;
+    max-height: 0;
+    overflow: hidden;
+    margin: auto;
+    transition: max-height .5s, padding .25s;
+}
+
+.profilePage .bottomContainer .courseCardContainer .courseCard p .courseCompletion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 25px;
+}
+
+.profilePage .bottomContainer .courseCardContainer .courseCard p .quizCompletion{
+    margin-bottom: 15px;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.profilePage .bottomContainer .courseCardContainer .courseCard p .quizCompletion .title{
+    font-weight: 600;
+}
+
+.profilePage .bottomContainer .courseCardContainer .courseCard p .quizCompletion .quizes{
+    width: 80%;
+    margin-top: 10px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profilePage .bottomContainer .courseCardContainer .courseCard p .quizCompletion .quizes .quiz{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.profilePage .bottomContainer .courseCardContainer .courseCard input:checked + label + p {
+    max-height: 400px;
+    padding: 10px 0px;
+}
+
+.profilePage .bottomContainer .courseCardContainer .courseCard input:checked + label::before{
+    content: "-";
+}
+
+
+
+
+
+
+
+footer{
+    box-shadow: 0px -3px 7px #cccccc8f;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 9fr 1fr ;
+    padding: 0 150px;
+}
+
+footer .topContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .topContainer .logo{
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 4.5rem;
+}
+
+footer .topContainer .logo span{
+    color: #efa110;
+}
+
+footer .topContainer .contentContainer{
+    display: flex;
+    gap: 200px;
+}
+
+footer .topContainer .contentContainer .linksContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .topContainer .contentContainer .linksContainer .heading{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+footer .bottomContainer{
+    margin-bottom: 15px;
+    align-content: end;
+    justify-self: center;
+}
